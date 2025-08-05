@@ -1,6 +1,6 @@
 {
-  "name": "Vertigo Tracking App",
-  "short_name": "Vertigo Tracker",
+  "name": "VertiLog",
+  "short_name": "VertiLog",
   "description": "A comprehensive mobile health application designed to help people monitor and manage their vertigo condition with episode tracking, trigger management, and insights.",
   "start_url": "/",
   "display": "standalone",
