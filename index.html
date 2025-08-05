@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertigo Tracking App - Monitor and Manage Your Vertigo</title>
+    <meta
+      name="description"
+      content="A comprehensive mobile health application designed to help people monitor and manage their vertigo condition with episode tracking, trigger management, and insights."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-brand">
+          <span class="brand-name">Vertigo Tracking</span>
+        </div>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="#download" class="btn-primary">Download</a>
+        </div>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1>Take Control of Your Vertigo</h1>
+              <p class="hero-subtitle">
+                A comprehensive mobile health app designed to help you monitor,
+                track, and manage your vertigo condition with detailed insights
+                and pattern recognition.
+              </p>
+              <div class="hero-buttons">
+                <a href="#download" class="btn-primary">Download App</a>
+                <a href="#features" class="btn-secondary">Learn More</a>
+              </div>
+            </div>
+            <div class="hero-image">
+              <div class="phone-mockup">
+                <div class="phone-screen">
+                  <div class="app-preview">
+                    <div class="app-header">
+                      <div class="status-bar"></div>
+                      <h3>Episodes</h3>
+                      <div class="header-icons">
+                        <span class="filter-icon">🔍</span>
+                        <span class="share-icon">📤</span>
+                      </div>
+                    </div>
+                    <div class="app-content">
+                      <div class="filters-section">
+                        <div class="filter-toggle">Advanced Filters</div>
+                      </div>
+                      <div class="episode-card active">
+                        <div class="episode-date">📅 July 6th, 2025</div>
+                        <div class="episode-badges">
+                          <span class="severity-badge high">⚠️ 10</span>
+                          <span class="intensity-badge">🔥 5</span>
+                          <span class="status-badge">HIGH</span>
+                        </div>
+                        <div class="episode-time">⏰ 10:30 AM - 6:45 PM</div>
+                        <div class="episode-details">
+                          <div class="duration">DURATION: 8h 15m</div>
+                          <div class="fullness">FULLNESS: L:5 R:10</div>
+                        </div>
+                        <div class="triggers">
+                          <span class="trigger-label">✖️ Triggers (1)</span>
+                          <span class="trigger-item">✖️ Olives</span>
+                        </div>
+                        <div class="episode-actions">
+                          <button class="action-btn view">👁️ VIEW</button>
+                          <button class="action-btn edit">✏️ EDIT</button>
+                          <button class="action-btn delete">🗑️ DELETE</button>
+                        </div>
+                      </div>
+                      <div class="floating-add-btn">+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="features">
+        <div class="container">
+          <h2>Comprehensive Vertigo Management</h2>
+          <p class="section-subtitle">
+            Everything you need to understand and manage your vertigo condition
+          </p>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">📊</div>
+              <h3>Episode Tracking</h3>
+              <p>
+                Record detailed vertigo episodes with start/end times, severity
+                levels (1-10), intensity ratings, ear fullness levels, and
+                personal notes.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">⚠️</div>
+              <h3>Trigger Management</h3>
+              <p>
+                Track potential triggers including food, environmental factors,
+                stress, and activities. Link triggers to episodes for pattern
+                recognition.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">📈</div>
+              <h3>Insights & Analytics</h3>
+              <p>
+                Get quick insights about episode patterns, trends over time,
+                most common triggers, and visual charts of your data.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">🧠</div>
+              <h3>Smart Features</h3>
+              <p>
+                Quick add functionality, smart filters, Google Drive sync for
+                backup, and accessibility features for all users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2>Better Understand Your Condition</h2>
+              <p>
+                The Vertigo Tracking App helps vertigo sufferers better
+                understand their condition by tracking episodes and identifying
+                patterns. This valuable information can be shared with
+                healthcare providers for more effective treatment planning.
+              </p>
+
+              <div class="benefits">
+                <div class="benefit">
+                  <span class="benefit-icon">✅</span>
+                  <span>Identify triggers and patterns</span>
+                </div>
+                <div class="benefit">
+                  <span class="benefit-icon">✅</span>
+                  <span>Share data with healthcare providers</span>
+                </div>
+                <div class="benefit">
+                  <span class="benefit-icon">✅</span>
+                  <span>Track improvement over time</span>
+                </div>
+                <div class="benefit">
+                  <span class="benefit-icon">✅</span>
+                  <span>Secure data backup with Google Drive</span>
+                </div>
+              </div>
+            </div>
+            <div class="about-image">
+              <div class="stats-card">
+                <h3>Why Users Love It</h3>
+                <div class="stat">
+                  <span class="stat-icon">📱</span>
+                  <span class="stat-label">Simple & intuitive interface</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-icon">🔒</span>
+                  <span class="stat-label"
+                    >Complete privacy & data control</span
+                  >
+                </div>
+                <div class="stat">
+                  <span class="stat-icon">📊</span>
+                  <span class="stat-label"
+                    >Comprehensive tracking & insights</span
+                  >
+                </div>
+                <div class="stat">
+                  <span class="stat-icon">🚫</span>
+                  <span class="stat-label">No ads, ever</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Download Section -->
+      <section id="download" class="download">
+        <div class="container">
+          <h2>Download Vertigo Tracking App</h2>
+          <p class="section-subtitle">Available now on Google Play</p>
+
+          <div class="download-buttons">
+            <a href="#" class="download-btn available">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Get it on Google Play"
+              />
+            </a>
+            <div class="download-btn coming-soon">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                alt="Download on the App Store"
+              />
+              <div class="coming-soon-overlay">
+                <span>Coming Soon</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="download-note">
+            Free to download • No ads ever • No subscription required • Your
+            data stays private
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="brand-name">Vertigo Tracking</span>
+          </div>
+          <nav class="footer-nav">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Vertigo Tracking App. All rights reserved.</p>
+          <p class="disclaimer">
+            This app is not a substitute for professional medical advice. Always
+            consult with healthcare providers.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
