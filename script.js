@@ -8,6 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
       navLinks.classList.toggle("active");
       mobileMenuToggle.classList.toggle("active");
     });
+
+    // Close mobile menu when a link is clicked
+    const navLinkItems = document.querySelectorAll(".nav-links a");
+    navLinkItems.forEach((link) => {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("active");
+        mobileMenuToggle.classList.remove("active");
+      });
+    });
   }
 
   // Smooth scrolling for anchor links
@@ -44,59 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     lastScrollY = currentScrollY;
   });
-
-  // Add mobile menu styles
-  const style = document.createElement("style");
-  style.textContent = `
-        @media (max-width: 768px) {
-            .nav-links {
-                position: fixed;
-                top: 80px;
-                left: 0;
-                right: 0;
-                background: white;
-                flex-direction: column;
-                padding: 2rem;
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-                transform: translateY(-100%);
-                opacity: 0;
-                visibility: hidden;
-                transition: all 0.3s ease;
-                z-index: 999;
-            }
-            
-            .nav-links.active {
-                transform: translateY(0);
-                opacity: 1;
-                visibility: visible;
-            }
-            
-            .nav-links a {
-                padding: 1rem 0;
-                border-bottom: 1px solid #f1f5f9;
-                display: block;
-                text-align: center;
-            }
-            
-            .nav-links .btn-primary {
-                margin-top: 1rem;
-                display: inline-block;
-            }
-            
-            .mobile-menu-toggle.active span:nth-child(1) {
-                transform: rotate(-45deg) translate(-5px, 6px);
-            }
-            
-            .mobile-menu-toggle.active span:nth-child(2) {
-                opacity: 0;
-            }
-            
-            .mobile-menu-toggle.active span:nth-child(3) {
-                transform: rotate(45deg) translate(-5px, -6px);
-            }
-        }
-    `;
-  document.head.appendChild(style);
 
   // Intersection Observer for animations
   const observerOptions = {
