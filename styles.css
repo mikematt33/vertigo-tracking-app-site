@@ -131,6 +131,14 @@ body {
   transform: translateY(-2px);
 }
 
+.btn-download {
+  color: white !important;
+}
+
+.btn-download:hover {
+  color: #9996ff !important;
+}
+
 /* Hero Section */
 .hero {
   padding: 8rem 0 4rem;
@@ -403,7 +411,7 @@ body {
 .section-subtitle {
   text-align: center;
   font-size: 1.25rem;
-  color: #64748b;
+  color: #222222;
   margin-bottom: 4rem;
 }
 

@@ -1,0 +1,13 @@
+{
+  "name": "Vertigo Tracking App",
+  "short_name": "Vertigo Tracker",
+  "description": "A comprehensive mobile health application designed to help people monitor and manage their vertigo condition with episode tracking, trigger management, and insights.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait",
+  "scope": "/",
+  "categories": ["health", "medical", "lifestyle"],
+  "lang": "en-US"
+}
